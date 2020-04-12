@@ -1,0 +1,21 @@
+<div class="show-contents">
+  <div class="content">
+    <div class="show-image">
+      <%= image_tag @post.image.url, alt: "ローズマリーの画像" ,class: "plant-image" %>
+      <p class="time">
+        <%= "#{@post.created_at.strftime("%Y-%m-%d(%a)")}の日記" %>
+      </p>
+    </div> 
+    <div class="show-title">
+      <%= @post.title %>
+    </div>
+    <div class="btn-content">
+      <%= link_to "編集", edit_post_path(@post.id), class: "show-edit" %>
+      <%= link_to "削除", post_path(@post.id), method: :delete, class: "show-edit" %>
+    </div>
+    
+    <div class="show-text">
+      <%= simple_format @post.content %> 
+    </div>
+  </div>
+</div>

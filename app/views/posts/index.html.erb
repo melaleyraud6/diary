@@ -1,47 +1,18 @@
-<header>
-  <nav class="header-left">
-    <div class="diary-title">観察日記</div>
-    <i class="fab fa-pagelines fa-2x"></i>
-  </nav>
-  <nav class="header-right">
-    <i class="far fa-arrow-alt-circle-up fa-3x"></i>
-  </nav>
-</header>
-<div class="contents">
-  <div class="left-content">
-    <ul class="diary-list">
-      <% @posts.each do |post|%>
-        <li class="diary-item">
-          <div class="diary-image">
-            <img src= <%= post.image %> ,alt="ローズマリーの画像", class="plant-image">
-            <p><%= post.title %></p>
-            <p class="time"><%= post.created_at.strftime("%Y-%m-%d(%a) %H:%M") %></p>
-          </div>
-          <p><%= post.content %></p>
-        </li> 
-      <% end %>
-    </ul>
-  </div>
-  <div class="right-content">
-    <p class="form">投稿フォーム</p>
-    <div class="diary-form">
-      <%= form_with(model: @post,local: true) do |form| %>
-        <div class="title">
-          <%= form.label :"題名: " %>
-          <%= form.text_field :title, placeholder: "タイトルを入力しましょう" ,class: "title-text" %>
-        </div>
-        <div class="text">
-          <%= form.label :"本文: " %>
-          <%= form.text_area :content,placeholder: "本文を入力してください" %>
-        </div>
-        <div class="image">
-          <%= form.label :"画像: " %>
-          <%= form.file_field :image %>
-        </div>
-        <div class="submit">
-          <%=form.submit class:"btn"%>
-        </div>
-      <% end %>
+
+  <div class="contents">
+    <div class="left-content">
+      <ul class="diary-list">
+        <% @posts.each do |post|%>
+          <%= render partial: "post", locals: { post: post } %>
+        <% end %>
+      </ul>
+    </div>
+    <div class="right-content">
+      <p class="form">投稿フォーム</p>
+      <div class="diary-form">
+        <%= form_with(model: @post,local: true) do |form| %>
+          <%= render partial: "form", locals: {form: form} %>
+        <% end %>
+      </div>
     </div>
   </div>
-</div>
