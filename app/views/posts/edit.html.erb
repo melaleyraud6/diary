@@ -1,0 +1,12 @@
+<div class="edit-contents"> 
+  <div class="edit-content"> 
+    <div class="edit-post">
+      投稿の編集
+    </div>
+    <%= form_with model: @post, class: :form, local: true do |form| %>
+      <%= form.text_field :title, placeholder: :タイトル, class: "edit-title" %>
+      <%= form.text_area :content, placeholder: :ブログ本文, rows: "10",class: "edit-text" %>
+      <%= form.submit class: "btn" %>
+    <% end %>
+  </div>
+</div>
