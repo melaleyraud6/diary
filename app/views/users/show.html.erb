@@ -1,0 +1,12 @@
+<div class="user-show-contents">
+  <div class="show-content">
+    <div class="user-name">
+      <%= "#{@user.name}さんの投稿一覧" %>
+    </div>
+    <ul class="diary-list">
+      <% @posts.each do |post|%>
+        <%= render partial: "/posts/post", locals: { post: post } %>
+      <% end %>
+    </ul>
+  </div>
+</div>

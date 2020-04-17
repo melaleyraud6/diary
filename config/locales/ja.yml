@@ -2,7 +2,7 @@ ja:
   activerecord:
     attributes:
       post:
-        title: 題名 # フォームのラベルを日本語する
+        title: 題名 # フォームのラベルを日本語にする
         content: 本文
         image: 画像
     errors:

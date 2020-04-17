@@ -1,0 +1,22 @@
+// Place all the styles related to the users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.user-show-contents{
+  padding:150px;
+  .show-content{
+    width: 100%;
+    background-color: oldlace;
+    padding: 20px;
+    .user-name{
+      text-align: center;
+      font-size: 24px;
+      padding:20px;
+    }
+    ul{
+      width: 100%;
+      li{
+        margin:15px;
+      }
+    }
+  }
+}

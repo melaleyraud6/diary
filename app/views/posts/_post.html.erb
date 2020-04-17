@@ -3,6 +3,7 @@
     <%= link_to image_tag(post.image.url ,alt: "ローズマリーの画像", class: "plant-image") , post_path(post.id) %>
     <p><%= post.title %></p>
     <p class="time"><%= post.created_at.strftime("%Y-%m-%d(%a) %H:%M") %></p>
+    <p class="name"><%= link_to post.user.name, user_path(post.user.id) %></p>
   </div>
   <p class="diary-text"><%= post.content %></p>
 </li> 
