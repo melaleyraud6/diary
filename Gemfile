@@ -64,6 +64,10 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'pry-rails'
 gem 'compass-rails', '3.1.0'
 gem 'sprockets', '3.7.2'
-
+#画像投稿
 gem 'carrierwave'
 gem 'mini_magick'
+#ユーザー登録
+gem 'devise'
+
+gem 'rails-i18n'

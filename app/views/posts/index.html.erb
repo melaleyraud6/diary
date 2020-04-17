@@ -8,11 +8,15 @@
       </ul>
     </div>
     <div class="right-content">
+    <% if user_signed_in? %>
       <p class="form">投稿フォーム</p>
       <div class="diary-form">
         <%= form_with(model: @post,local: true) do |form| %>
           <%= render partial: "form", locals: {form: form} %>
         <% end %>
       </div>
+    <% else %>
+      <div class="info">日記の投稿にはログイン/新規登録が必要になります</div>
+    <% end %>
     </div>
   </div>

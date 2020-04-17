@@ -1,5 +1,5 @@
 body{
-  font-family: 'ロンドB';
+  font-family: 'はれのそら明朝';
 }
 a{
   text-decoration: none;
@@ -24,9 +24,16 @@ header{
   margin-left: 20px;
   color:#c1ff84;
 }
+.header-right{
+  display: flex;
+}
+.user-nav a{
+  font-size: 20px;
+ 
+}
 .fa-arrow-alt-circle-up{
   color:white;
-  margin-right: 50px;
+  margin: 0 50px;
   line-height: 100px;
 }
 .diary-title{
@@ -48,25 +55,26 @@ header{
 .left-content{
   padding:50px;
 }
-ul {
+.diary-list {
   display:flex;
   flex-wrap: wrap;
   width:800px;
+  & li{
+    list-style: none;
+    width:250px;
+    border: 1px solid #e1d4c3;
+    margin: 0 20px 20px 0;
+    background-color: #e5fff2;
+    &:nth-child(3n){
+        margin-right:0;
+      }
+    &:hover{
+        cursor: pointer;
+        box-shadow: 0 0 20px #99cad2;
+      }
+  }
 }
-.diary-list li{
-  list-style: none;
-  width:250px;
-  border: 1px solid #e1d4c3;
-  margin: 0 20px 20px 0;
-  background-color: #e5fff2;
-  &:nth-child(3n){
-      margin-right:0;
-    }
-  &:hover{
-      cursor: pointer;
-      box-shadow: 0 0 20px #99cad2;
-    }
-}
+
 
 .plant-image{
   width:250px;
@@ -74,9 +82,16 @@ ul {
 }
 .diary-image{
   position: relative;
-  & p{
-      text-align: center;
-    }
+  p{
+    text-align: center;
+  }
+  .name{
+    position: absolute;
+    bottom:40px;
+    right:10px;
+    color: white;
+    font-weight: bold;
+  }
 }
 .diary-text{
   white-space: nowrap; /* 横幅のMAXに達しても改行しない */
@@ -100,7 +115,6 @@ ul {
   border-radius: 20px;
   background-position: center;
   background-image: url(form-background.jpg);
-  
 }
 .form{
   // color: white;
@@ -162,6 +176,10 @@ textarea{
       cursor: pointer;
     }
 }
+.info{
+  font-size: 26px;
+  padding:15px;
+}
 // ------------------------------------
 .show-contents{
   height: calc(100vh - 100px);
@@ -177,15 +195,21 @@ textarea{
     .show-image{
       position: relative;
       display: flex;
-      justify-content: center;
+      justify-content: flex-end;
       .plant-image{
         border: 3px solid white;
       }
       .time{
         position: absolute;
+        top: 50px;
+        left: 40px;
+        font-size: 20px;
+      }
+      .name{
+        position: absolute;
         top: 100px;
         left: 40px;
-        font-size: 24px;
+        font-size: 20px;
       }
     }
     .show-title{
@@ -244,3 +268,78 @@ textarea{
     }
   }
 }
+//--------------------------------------------
+.registration-contents{
+  padding:100px;
+  .registration-content{
+    width:900px;
+    margin: 10px auto;
+    height: 600px;
+    background-color: #f8f2e2;
+    font-size: 20px;
+    color: gray;
+    h2{
+      padding-top: 30px;
+      text-align: center;
+    }
+    .field{
+      padding:0 50px;
+      margin-bottom: 10px; 
+      .sign-form{
+        width: 100%;
+        height:40px;
+      }
+    }
+    .actions{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+//----------------------------------------------
+.session-contents{
+  padding:100px;
+  .session-content{
+    width:900px;
+    margin: 10px auto;
+    height: 600px;
+    background-color: #f8f2e2;
+    font-size: 20px;
+    color: gray;
+    h2{
+      padding-top: 50px;
+      text-align: center;
+    }
+    .field{
+      padding:0 50px;
+      margin-bottom: 10px;
+      .login-form{
+        width:100%;
+        height:40px;
+      }
+      .checkbox{
+        transform: scale(2.0);
+      }
+    }
+    .actions{
+      display: flex;
+      justify-content: center;
+    }
+  }
+}
+//------------------------------------------------
+#error_explanation{
+  padding-top:150px;
+  height:50px;
+  width:100%;
+  text-align: center;
+  font-size: 20px;
+  color:red;
+  ul {
+    display: block;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+}
+//--------------------------------------------------
+
