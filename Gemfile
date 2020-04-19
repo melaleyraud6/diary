@@ -71,3 +71,6 @@ gem 'mini_magick'
 gem 'devise'
 
 gem 'rails-i18n'
+#ページネーション
+gem 'kaminari'
+

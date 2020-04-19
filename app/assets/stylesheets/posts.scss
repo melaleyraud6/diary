@@ -46,7 +46,7 @@ header{
   }
 }
 .contents{
-  height: calc(100vh - 100px);
+  height: calc(100vh - 100px - 30px);
   background-color: #f8f2e2;
   padding-top: 100px ;
   display: flex;
@@ -179,6 +179,12 @@ textarea{
 .info{
   font-size: 26px;
   padding:15px;
+}
+.pagination{
+  text-align: center;
+  font-size: 24px;
+  height:30px;
+  background-color: #99cad2;
 }
 // ------------------------------------
 .show-contents{
