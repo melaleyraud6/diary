@@ -3,4 +3,6 @@ Rails.application.routes.draw do
   root to: "posts#index"
   resources :posts, only: [:create, :show, :edit, :update, :destroy]
   resources :users, only: [:show]
+
+  mount LetterOpenerWeb::Engine, at: "/letter_opener" if Rails.env.development?
 end
