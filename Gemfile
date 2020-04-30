@@ -75,4 +75,3 @@ gem 'rails-i18n'
 #ページネーション
 gem 'kaminari'
 
-
