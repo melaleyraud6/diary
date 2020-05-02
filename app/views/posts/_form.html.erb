@@ -7,9 +7,15 @@
   <%= form.text_area :content,placeholder: "本文を入力しましょう" %>
 </div>
 <div class="image">
-  <%= form.label :image %>
-  <%= form.file_field :image %>
+  <%= form.label :image ,for: "post_image" ,class: "fas fa-image fa-2x" do %>
+    <%= form.file_field :image, id: "post_image" , class: "edit-image" , style: "display:none;" , type: "file" %>
+  <% end %>
+  
+  <div id="img_field" onClick="$('#file').click()">
+    画像プレビュー
+  </div>
 </div>
+
 <div class="submit">
   <%=form.submit class:"btn"%>
 </div>
