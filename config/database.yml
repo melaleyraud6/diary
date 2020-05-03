@@ -50,7 +50,7 @@ test:
 production:
   <<: *default
   database: diary_production
-  username: user
+  username: root
   password: <%= ENV['DIARY_DATABASE_PASSWORD'] %>
-  socket: /var/lib/mysql.sock
+  socket: /var/lib/mysql/mysql.sock
 
