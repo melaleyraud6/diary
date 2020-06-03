@@ -26,7 +26,7 @@ $(document).on('turbolinks:load',()=> {
       "user[password]": {
         required: true,   // パスワードの入力有無チェック
         // password: true,   // パスワードの正規表現チェック
-        maxlength: 6    //最大文字数を設定
+        minlength: 6    //最小文字数を設定
       },
       "user[password_confirmation]": {
         required: true,
@@ -45,7 +45,7 @@ $(document).on('turbolinks:load',()=> {
       },
       "user[password]": {
         required: "パスワードを入力してください。",
-        password: "6文字以下  英字と数字両方を含むパスワードを入力してください"
+        password: "6文字以上  英字と数字両方を含むパスワードを入力してください"
       },
       "user[password_confirmation]": {
         required: "確認用パスワードを入力してください。",
