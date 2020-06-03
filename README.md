@@ -18,7 +18,7 @@
 ログイン
 [![Image from Gyazo](https://i.gyazo.com/acdb19dff2649cea4e1c86b53f23ae78.png)](https://gyazo.com/acdb19dff2649cea4e1c86b53f23ae78)
 トップページ
-[![Image from Gyazo](https://i.gyazo.com/f9be43e9a72a952ef819d248ba821e27.gif)](https://gyazo.com/f9be43e9a72a952ef819d248ba821e27)
+[![Image from Gyazo](https://i.gyazo.com/2033e49629acb1d5a419fc2f692ba9b8.gif)](https://gyazo.com/2033e49629acb1d5a419fc2f692ba9b8)
 ログイン後トップページ
 [![Image from Gyazo](https://i.gyazo.com/1d766ffdf5d46f821d1b653840e6b0d3.jpg)](https://gyazo.com/1d766ffdf5d46f821d1b653840e6b0d3)
   *  使用技術  
