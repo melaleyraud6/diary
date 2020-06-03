@@ -8,46 +8,67 @@ a{
 header{
   height:100px;
   line-height: 100px;
-  background-color: #99cad2;
+  background-image: url("images.jpg");
+  background-size: cover;
   position: fixed;
   z-index: 1;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  box-shadow: 5px 10px 20px rgba(0,0,0,0.25);
  
 }
 .header-left{
   display: flex;
+  align-items: center;
 }
 .fa-pagelines{
   line-height: 100px;
   margin-left: 20px;
-  color:#c1ff84;
+  color:green;
 }
 .header-right{
   display: flex;
+  #nav{
+    align-items: center;
+    display: flex;
+  }
 }
 .user-nav a{
-  font-size: 20px;
- 
+  font-size: 24px;
+  font-weight: bold;
+  color: gray;
+ &:hover {
+   color: green;
+   text-shadow:2px 2px 0 #fff, 4px 4px 0 #fff;
+ }
 }
 .fa-arrow-alt-circle-up{
-  color:white;
+  color:gray;
   margin: 0 50px;
   line-height: 100px;
+  cursor: pointer;
+  &:hover{
+    color:green;
+    text-shadow:2px 2px 0 #fff, 4px 4px 0 #fff;
+  }
 }
 .diary-title{
-  color:white;
+  color:gray;
   font-size: 40px;
   line-height: 100px;
   padding-left:50px;
   & a{
     text-decoration: none;
   }
+  &:hover {
+    color: green;
+    text-shadow:2px 2px 0 #fff, 4px 4px 0 #fff;
+  }
 }
 .contents{
   height: calc(100vh - 100px);
-  background-color: #f8f2e2;
+  background-image: url("RRice-colorful-wall.jpg");
   padding-top: 100px ;
   display: flex;
   overflow: scroll;
@@ -425,6 +446,7 @@ textarea{
     display: block;
     margin: 0 auto;
     border: 1px solid red;
+    width: 800px;
   }
 }
 //--------------------------------------------------

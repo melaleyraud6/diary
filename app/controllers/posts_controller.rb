@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
   def index
-    @posts = Post.includes(:user).page(params[:page]).per(9).order("created_at DESC")  # 投稿一覧 新しい順番に
+    @posts = Post.includes(:user).page(params[:page]).per(30).order("created_at DESC")  # 投稿一覧 新しい順番に
     @post = Post.new  # 新規投稿のためのインスタンス
   end
 

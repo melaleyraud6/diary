@@ -61,4 +61,14 @@ $(document).on('turbolinks:load',()=> {
   $("#user_name,#user_email,#user_password,#user_password_confirmation").blur(function () {
     $(this).valid();
   });
+
+  
+
+  $('#top').click(function () {
+    console.log('qqqqq');
+    $('html,body').animate({ scrollTop: 0 }, 500);
+    return false;
+  });
+    
+
 });

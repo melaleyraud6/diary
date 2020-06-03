@@ -2,11 +2,14 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .user-show-contents{
-  padding:150px;
+  padding:200px 150px;
+  background-image: url('content-background.jpg');
+
   .show-content{
     width: 100%;
     background-color: oldlace;
     padding: 20px;
+    opacity: 0.8;
     .user-name{
       text-align: center;
       font-size: 24px;

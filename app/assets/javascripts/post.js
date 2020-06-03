@@ -36,5 +36,6 @@ $(document).on('turbolinks:load',()=> {
       reader.readAsDataURL(file);
     });
   });
+  
 });
 
